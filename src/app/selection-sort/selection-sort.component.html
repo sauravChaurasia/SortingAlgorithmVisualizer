@@ -1,0 +1,49 @@
+
+<div *ngIf="!sorted">
+  <div class="bar" id="chan" *ngFor="let siz of numarr;let comp of numarr; let i= index;let j=index" style="width: 5px;" [ngStyle]="{height:siz*.8+'px'}"[ngClass]="{'red-bar' : i== activeIndex1,'green-bar':j==activeIndex2}">
+  </div>
+</div>
+<div  *ngIf="sorted" >
+  <div class="bar" *ngFor="let siz of rawData" style="width: 5px;" [ngStyle]="{height:siz*.8+'px'}">
+  </div>
+</div>
+<div class="row" align="bottom">
+  <div class="col-md-8 offset-md-2">
+    <table class="text-align-center" align="center">
+      <tr >
+        <th colspan="3">
+          Time Complexity
+        </th>
+       
+      </tr>
+      <tr>
+        <th>
+          Best Case
+        </th>
+        <th>
+          Average Case
+        </th>
+        <th>
+          Worst Case
+        </th>
+      </tr>
+      <tr>
+        <td>
+          Ω(n^2)
+        </td>
+        <td>
+          θ(n^2)
+        </td>
+        <td>
+          O(n^2)
+        </td>
+      </tr>
+    </table>
+  </div>
+
+</div>
+
+
+            
+    
+    
