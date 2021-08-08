@@ -1,0 +1,93 @@
+<!-- {{"asdsa"}} -->
+
+<div class="row">
+  <div class="col-md-4 offset-4">
+<h3 style="text-align: center;">Sorting Visualizer
+</h3> </div>
+
+</div>
+<div class="row center">
+  
+    <table>
+      <tr>
+        <th>Selection Sort</th>
+        <th>Bubble Sort</th>
+        <th>Insertion Sort</th>
+      </tr>
+      <tr>
+        
+        <td>
+          <app-selection-sort [arrayToBeSorted]="sendData1"></app-selection-sort>
+        </td>
+        <td>
+          <app-bubble-sort [arrayToBeSorted]="sendData"></app-bubble-sort>
+        </td>
+        <td>
+          <app-insertion-sort [arrayToBeSorted]="sendData2"></app-insertion-sort>
+        </td>
+      </tr>
+    <!-- </table>
+    </div>
+    <div class="col-md-4">
+      <table> -->
+      <!-- <tr>
+        <th>Bubble Sort</th>
+      </tr>
+     
+      <tr>
+        <td>
+          <app-bubble-sort></app-bubble-sort>
+        </td>
+      </tr> -->
+    <!-- </table>
+    </div>
+    <div class="col-md-4">
+     <table>--> 
+       <!-- <tr> 
+        <th>Insertion Sort</th>
+      </tr>
+      <tr>
+        <td>
+          <app-insertion-sort></app-insertion-sort>
+        </td>
+      </tr>
+    </table> -->
+    
+    
+  
+<!-- </div> -->
+<!-- <div class="row">
+  <div class="col-md-10 offset-2">
+    <table>
+      <tr>
+        <th>Selection Sort</th>
+      </tr>
+      <tr>
+        <td>
+          
+        </td>
+      </tr>
+    </table>
+  </div>
+</div> -->
+ <!-- <div class="row"> 
+  <div class="col-md-10 offset-2">
+    <table>
+      <tr>
+        <th>Insertion Sort</th>
+      </tr>
+      <tr>
+        <td>
+          <div *ngIf="!sorted">
+            <div class="bar" id="chan" *ngFor="let siz of numarr;let comp of numarr; let i= index;let j=index" style="width: 5px;" [ngStyle]="{height:siz*.8+'px'}"[ngClass]="{'red-bar' : i== activeIndex1,'green-bar':j==activeIndex2}">
+            </div>
+            </div>
+            <div  *ngIf="sorted" >
+              <div class="bar" *ngFor="let siz of rawData" style="width: 5px;" [ngStyle]="{height:siz*.8+'px'}">
+              </div>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div> -->
